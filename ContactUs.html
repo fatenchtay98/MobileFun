@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<img src = "pics/login.jpg">
+	<meta charset="UTF-8">
+	<title>Transparent Contact US form</title>
+	<link rel="icon" href="pics/logo.jpg"/> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".btn").click(function(){
+				$(".input, .text-area").val(" ");
+			});
+		});
+	</script>
+	<link rel="stylesheet" href="css/contactus.css">
+</head>
+<body>
+
+ <input class ="goback" type="button" value="Go Back!" onclick="history.back(-1)" />
+<div class="wrapper">
+		<div class="contact-form">
+			<div class="title"> We are here for you</div>
+
+			<div class="input-fields">
+					<div class="items">
+						<label for="name" class="label">name</label>
+						<input id="name" type="text" class="input">
+					</div>
+					<div class="items">
+						<label for="email" class="label">email</label>
+						<input id="email" type="text" class="input">
+					</div>
+					<div class="items">
+						<label for="subject" class="label">subject</label>
+						<input id="subject" type="text" class="input">
+					</div>
+					<div class="items">
+						<label for="msg" class="label">message</label>
+						<textarea id="msg" class="text-area"></textarea>
+					</div>
+			</div>
+				
+			<div class="btn">send</div>
+		</div>
+</div>	
+	
+</body>
+</html>
